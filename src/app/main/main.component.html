@@ -1,0 +1,15 @@
+<header class="header">
+    <h1 class="header__title">Angular list of prohibited words</h1>
+</header>
+<main class="main">
+    <div class="bad">
+        <p class="bad__text">Bad words: <span [textContent]="wordsBadSpan" class="bad__text-span"></span></p>
+        <form class="bad-form">
+            <input name="wordsBad" [(ngModel)]="wordsBad" class="bad-form__word" [class]="styleBorderWord" [placeholder]="placeholderWord" type="text">
+            <input (click)="addButtonClick()" class="bad-form__button" type="button" value="Add">
+            <input (click)="resetButtonClick()" class="bad-form__button bad-form__button--red" type="button" value="Reset">
+            <textarea name="textBad" [(ngModel)]="textBad" class="bad-form__text" [class]="styleBorderText" [placeholder]="placeholderText"></textarea>
+            <input (click)="cenzorButtonClick()" class="bad-form__button bad-form__button--big" type="button" value="Cenzor">
+        </form>
+    </div>
+</main>

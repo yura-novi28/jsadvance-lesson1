@@ -1,0 +1,113 @@
+p{
+    margin: 0;
+}
+.header{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    min-height: 7vh;
+    width: 100%;
+    border: 1px solid darkgray;
+    background-color: #f7f7f7;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__title{
+        margin: 0;
+        padding: 0;
+        font-size: 2em;
+        color: black;
+        text-align: center;
+    }
+}
+
+.main{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 93vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bad{
+    box-sizing: border-box;
+    width: 60%;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    padding: 10px;
+    &__text{
+        font-size: 1.3em;
+    }
+    &__text-span{
+        color: red;
+    }
+}
+
+.bad-form{
+    box-sizing: border-box;
+    &__word{
+        box-sizing: border-box;
+        height: 30px;
+        width: 66%;
+        outline: 0;
+        border: 1px solid darkgray;
+        padding-left: 5px;
+        border-radius: 5px;
+        margin-top: 20px;
+        &:focus{
+            outline: 2px solid #bddbf3;
+        }
+    }
+    &__button{
+        box-sizing: border-box;
+        margin-left: 1%;
+        width: 16%;
+        height: 30px;
+        border-radius: 5px;
+        background-color: #fec207;
+        color: black;
+        outline: 0;
+        border: 0;
+        &:hover{
+            background-color: #f2c43c;
+        }
+    }
+    &__button--red{
+        background-color: #db3544;
+        color: #fff;
+        &:hover{
+            background-color: #c72d3a;
+        }
+    }
+    &__button--big{
+        background-color: #27a743;
+        color: #fff;
+        width: 100%;
+        margin: 20px 0 0 0;
+        &:hover{
+            background-color: #25943d;
+        }
+    }
+    &__text{
+        margin-top: 20px;
+        resize: none;
+        box-sizing: border-box;
+        min-height: 100px;
+        width: 100%;
+        outline: 0;
+        border: 1px solid darkgray;
+        padding-left: 5px;
+        border-radius: 5px;
+        &:focus{
+            outline: 2px solid #bddbf3;
+        }
+    }
+}
+
+.border-red{
+    border: 1px solid red;
+}
